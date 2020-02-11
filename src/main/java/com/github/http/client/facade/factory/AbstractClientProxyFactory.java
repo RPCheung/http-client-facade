@@ -19,10 +19,10 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import com.cheung.client.api.ExecutionInterceptor;
-import com.cheung.client.component.HttpMethod;
-import com.cheung.client.configuration.Mapper;
 
+import com.github.http.client.facade.api.ExecutionInterceptor;
+import com.github.http.client.facade.component.HttpMethod;
+import com.github.http.client.facade.configuration.Mapper;
 import net.sf.cglib.proxy.Enhancer;
 
 import net.sf.cglib.proxy.MethodInterceptor;

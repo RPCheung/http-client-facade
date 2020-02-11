@@ -13,10 +13,10 @@
 
 package com.github.http.client.facade.factory;
 
-import com.cheung.client.api.HttpClientExecutor;
-import com.cheung.client.component.ClientType;
-import com.cheung.client.component.HttpMethod;
-import com.cheung.client.configuration.Mapper;
+import com.github.http.client.facade.api.HttpClientExecutor;
+import com.github.http.client.facade.component.ClientType;
+import com.github.http.client.facade.component.HttpMethod;
+import com.github.http.client.facade.configuration.Mapper;
 
 class HttpClientAdapter {
 

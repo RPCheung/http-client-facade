@@ -14,6 +14,8 @@
 
 package com.github.http.client.facade.impl;
 
+import com.github.http.client.facade.api.AbstractClientImpl;
+import com.github.http.client.facade.configuration.Mapper;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -24,13 +26,11 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
 import com.alibaba.fastjson.JSONObject;
-import com.cheung.client.api.AbstractClientImpl;
-import com.cheung.client.configuration.Mapper;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class ApacheHttpClient extends AbstractClientImpl<CloseableHttpClient,JSONObject,JSONObject,String,String>{
+public class ApacheHttpClient extends AbstractClientImpl<CloseableHttpClient,JSONObject,JSONObject,String,String> {
 	
 	public ApacheHttpClient(Mapper mapper) {
 		super(mapper,HttpClients.custom().setDefaultRequestConfig(RequestConfig.custom()

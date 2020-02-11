@@ -13,7 +13,7 @@
 
 package com.github.http.client.facade.factory;
 
-import com.cheung.client.configuration.Mapper;
+import com.github.http.client.facade.configuration.Mapper;
 
 public interface ClientProxyFactory {
 	

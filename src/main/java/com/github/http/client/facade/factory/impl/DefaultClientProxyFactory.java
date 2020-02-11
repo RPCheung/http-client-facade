@@ -16,15 +16,13 @@ package com.github.http.client.facade.factory.impl;
 
 import java.util.List;
 
-import com.cheung.client.api.ExecutionInterceptor;
-import com.cheung.client.api.HttpClientExecutor;
-import com.cheung.client.configuration.Mapper;
-import com.cheung.client.factory.AbstractClientProxyFactory;
-import com.cheung.client.factory.CallbackHandler;
 
+import com.github.http.client.facade.configuration.Mapper;
+import com.github.http.client.facade.factory.AbstractClientProxyFactory;
+import com.github.http.client.facade.factory.CallbackHandler;
 import net.sf.cglib.proxy.Enhancer;
 
-public class DefaultClientProxyFactory extends AbstractClientProxyFactory{
+public class DefaultClientProxyFactory extends AbstractClientProxyFactory {
 
 	public DefaultClientProxyFactory(List<Mapper> mappers) throws Exception {
 		super(mappers);
@@ -44,7 +42,7 @@ public class DefaultClientProxyFactory extends AbstractClientProxyFactory{
 	}
 
 	@Override
-	public void registerClient(Mapper mapper,CallbackHandler callbackHandler) throws ClassNotFoundException {
+	public void registerClient(Mapper mapper, CallbackHandler callbackHandler) throws ClassNotFoundException {
 		
 		Class<?> clazz = Thread.currentThread().getContextClassLoader().loadClass(mapper.getNamespace());
 

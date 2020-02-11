@@ -10,7 +10,6 @@
  * 
  * Created on 2020年2月9日
  *******************************************************************************/
-
 package com.github.http.client.facade.component;
 
 public enum HttpMethod {

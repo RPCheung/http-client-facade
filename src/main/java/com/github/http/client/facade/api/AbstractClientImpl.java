@@ -13,7 +13,8 @@
 
 package com.github.http.client.facade.api;
 
-import com.cheung.client.configuration.Mapper;
+
+import com.github.http.client.facade.configuration.Mapper;
 
 public abstract class AbstractClientImpl<C,P0,R0,P1,R1> implements HttpClientExecutor<C,P0,R0,P1,R1> {
 	

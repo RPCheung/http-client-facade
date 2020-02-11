@@ -4,6 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+
     <groupId>com.github</groupId>
     <artifactId>http.client.facade</artifactId>
     <version>1.0-beta</version>
@@ -24,6 +30,27 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <tag>master</tag>
+        <url>scm:git:https://github.com/RPCheung/http-client-facade.git</url>
+        <connection>scm:git:https://github.com/RPCheung/http-client-facade.git</connection>
+        <developerConnection>scm:git:https://github.com/RPCheung/http-client-facade.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <name>RPCheung</name>
+            <email>iwanttobeaprince@gmail.com</email>
+            <organization>ce</organization>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
     <dependencies>
         <!-- start -->
         <dependency>
